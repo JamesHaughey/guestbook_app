@@ -1,0 +1,8 @@
+<h1>Add a signature</h1>
+
+<form action="/guestbook/create" method="POST">
+    {{range .}}
+        <div><b>{{.}}: </b><input type="text" name="{{.}}"></div>
+    {{end}}
+    <div><input type="submit"></div>
+</form>
